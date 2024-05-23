@@ -1,0 +1,18 @@
+ROUTER COMMANDS:
+sh run
+configure
+interface fastEthernet 0/0
+ip address 192.168.0.1 255.255.255.0
+no shutdown
+exit 
+exit
+sh ip interface brief
+
+VIRTUAL NETWORK 1
+ip 192.168.0.100/24 192.168.0.1
+
+VIRTUAL NETWORK 2
+ip 192168.0.200 255.255.255.0 gateway 192.168.0.1
+
+
+sh ip
